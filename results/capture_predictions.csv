@@ -1,0 +1,7 @@
+Flow_ID,Src_IP,Src_Port,Dst_IP,Dst_Port,Protocol,Predicted_Label
+flow_000001,192.0.2.1,49152,192.0.2.2,21,TCP,PortScan
+flow_000002,192.0.2.1,49153,192.0.2.2,22,TCP,PortScan
+flow_000003,192.0.2.1,49154,192.0.2.2,23,TCP,PortScan
+flow_000004,192.0.2.1,49155,192.0.2.2,25,TCP,PortScan
+flow_000005,192.0.2.1,49156,192.0.2.2,53,TCP,PortScan
+flow_summary_note,,,,,See full results below

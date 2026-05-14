@@ -1,0 +1,26 @@
+Classification Report — XGBClassifier (GBT) · CIC-IDS2017
+==========================================================
+Entrenamiento: 80% del dataset  |  Test: 20% del dataset
+random_state=42 | stratify=True | n_estimators=200 | max_depth=6
+
+                              precision    recall  f1-score   support
+
+                      BENIGN     1.0000    1.0000    1.0000    452307
+                         Bot     1.0000    1.0000    1.0000       967
+                        DDoS     1.0000    1.0000    1.0000     24899
+               DoS GoldenEye     0.9995    0.9995    0.9995      2071
+                    DoS Hulk     1.0000    1.0000    1.0000     22756
+            DoS Slowhttptest     0.9993    0.9989    0.9991      2691
+               DoS slowloris     0.9986    0.9993    0.9990      1439
+                 FTP-Patator     1.0000    1.0000    1.0000      1560
+                  Heartbleed     1.0000    1.0000    1.0000         5
+                Infiltration     1.0000    1.0000    1.0000        20
+                    PortScan     0.9999    1.0000    0.9999     28657
+                 SSH-Patator     1.0000    1.0000    1.0000      1316
+  Web Attack - Brute Force      0.9870    0.9839    0.9854       311
+  Web Attack - Sql Injection    0.9545    0.8095    0.8762        21
+         Web Attack - XSS       0.9701    0.9657    0.9678       133
+
+                    accuracy                         0.9999    539153
+                   macro avg     0.9939    0.9904    0.9918    539153
+                weighted avg     0.9999    0.9999    0.9999    539153
