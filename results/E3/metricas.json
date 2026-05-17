@@ -1,0 +1,86 @@
+{
+ "experimento": "E3",
+ "filas_tras_limpieza": 2313810,
+ "duplicados_eliminados": 82004,
+ "filas_con_misma_huella_y_distinta_etiqueta": 270,
+ "exactitud": 0.9969480906520151,
+ "f1_macro": 0.8463653760050006,
+ "f1_ponderado": 0.9970261043593233,
+ "train": 1785528,
+ "test": 446278,
+ "segundos_entrenamiento": 137,
+ "por_clase": {
+  "Benign": {
+   "f1": 0.9992628023796053,
+   "soporte": 379058
+  },
+  "Bot": {
+   "f1": 0.6263982102908278,
+   "soporte": 285
+  },
+  "DDoS": {
+   "f1": 0.9990029130579288,
+   "soporte": 25598
+  },
+  "DoS GoldenEye": {
+   "f1": 0.9653056407835733,
+   "soporte": 2046
+  },
+  "DoS Hulk": {
+   "f1": 0.9900293426373338,
+   "soporte": 34558
+  },
+  "DoS Slowhttptest": {
+   "f1": 0.8857768052516412,
+   "soporte": 1036
+  },
+  "DoS slowloris": {
+   "f1": 0.9299111549851925,
+   "soporte": 1065
+  },
+  "FTP-Patator": {
+   "f1": 0.9987282746926663,
+   "soporte": 1179
+  },
+  "Heartbleed": {
+   "f1": 1.0,
+   "soporte": 2
+  },
+  "Infiltration": {
+   "f1": 0.8333333333333334,
+   "soporte": 6
+  },
+  "PortScan": {
+   "f1": 0.7144259077526988,
+   "soporte": 388
+  },
+  "SSH-Patator": {
+   "f1": 0.9992217898832685,
+   "soporte": 643
+  },
+  "Web Attack – Brute Force": {
+   "f1": 0.6539509536784741,
+   "soporte": 286
+  },
+  "Web Attack – Sql Injection": {
+   "f1": 0.8571428571428571,
+   "soporte": 4
+  },
+  "Web Attack – XSS": {
+   "f1": 0.24299065420560748,
+   "soporte": 124
+  }
+ },
+ "top_importancias": {
+  "Bwd Packet Length Std": 0.15209287405014038,
+  "Total Backward Packets": 0.11125033348798752,
+  "Subflow Fwd Bytes": 0.05311905965209007,
+  "Idle Max": 0.046917300671339035,
+  "Idle Min": 0.04648437350988388,
+  "Bwd Packet Length Mean": 0.03281938657164574,
+  "Active Std": 0.03264113515615463,
+  "Fwd PSH Flags": 0.029668161645531654,
+  "Packet Length Max": 0.02893437258899212,
+  "Fwd Packets Length Total": 0.028091751039028168
+ }
+}

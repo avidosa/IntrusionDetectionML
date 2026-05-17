@@ -1,0 +1,75 @@
+{
+ "experimento": "E0c",
+ "filas_tras_limpieza": 2313810,
+ "exactitud": 0.8545731931316746,
+ "f1_macro": 0.06143898382632702,
+ "f1_ponderado": 0.7875616288684439,
+ "train": 1851048,
+ "test": 462762,
+ "segundos_entrenamiento": 42,
+ "por_clase": {
+  "Benign": {
+   "f1": 0.9215847573949053,
+   "soporte": 395464
+  },
+  "Bot": {
+   "f1": 0.0,
+   "soporte": 288
+  },
+  "DDoS": {
+   "f1": 0.0,
+   "soporte": 25603
+  },
+  "DoS GoldenEye": {
+   "f1": 0.0,
+   "soporte": 2057
+  },
+  "DoS Hulk": {
+   "f1": 0.0,
+   "soporte": 34569
+  },
+  "DoS Slowhttptest": {
+   "f1": 0.0,
+   "soporte": 1046
+  },
+  "DoS slowloris": {
+   "f1": 0.0,
+   "soporte": 1077
+  },
+  "FTP-Patator": {
+   "f1": 0.0,
+   "soporte": 1186
+  },
+  "Heartbleed": {
+   "f1": 0.0,
+   "soporte": 2
+  },
+  "Infiltration": {
+   "f1": 0.0,
+   "soporte": 7
+  },
+  "PortScan": {
+   "f1": 0.0,
+   "soporte": 391
+  },
+  "SSH-Patator": {
+   "f1": 0.0,
+   "soporte": 644
+  },
+  "Web Attack – Brute Force": {
+   "f1": 0.0,
+   "soporte": 294
+  },
+  "Web Attack – Sql Injection": {
+   "f1": 0.0,
+   "soporte": 4
+  },
+  "Web Attack – XSS": {
+   "f1": 0.0,
+   "soporte": 130
+  }
+ },
+ "top_importancias": {
+  "Counter": 1.0
+ }
+}
