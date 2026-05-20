@@ -1,2 +1,4 @@
 cicids2017*.csv
+datos/
+*.zip
 __pycache__/

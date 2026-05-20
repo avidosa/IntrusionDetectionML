@@ -1,0 +1,56 @@
+{
+ "eleccion": "C0 base",
+ "validacion": {
+  "C0 base": {
+   "f1_macro13": 0.9421367098134087,
+   "f1_macro_grandes": 0.9525951325766857,
+   "exactitud": 0.976676926937018,
+   "segundos": 126
+  },
+  "C1 + pesos de clase": {
+   "f1_macro13": 0.9230841203636792,
+   "f1_macro_grandes": 0.9394024452782875,
+   "exactitud": 0.973634689570816,
+   "segundos": 124
+  },
+  "C2 + modelo mas grande": {
+   "f1_macro13": 0.9252931717028652,
+   "f1_macro_grandes": 0.9420131423155073,
+   "exactitud": 0.9735137169509523,
+   "segundos": 272
+  },
+  "C3 + submuestreo benigno": {
+   "f1_macro13": 0.9181149670142503,
+   "f1_macro_grandes": 0.9395904155622958,
+   "exactitud": 0.9748780192749708,
+   "segundos": 60
+  },
+  "C4 + web unido": {
+   "f1_macro13": 0.9117687387007085,
+   "f1_macro_grandes": 0.9406464772880032,
+   "exactitud": 0.9753843120914374,
+   "segundos": 41
+  },
+  "C5 web unido y grande": {
+   "f1_macro13": 0.9046870680851357,
+   "f1_macro_grandes": 0.9396301713733421,
+   "exactitud": 0.9712264383420478,
+   "segundos": 77
+  }
+ },
+ "test_final": {
+  "f1_macro13": 0.9060225239555655,
+  "f1_macro_grandes": 0.9040872252808199,
+  "exactitud": 0.9972416296568507
+ },
+ "test_base": {
+  "f1_macro13": 0.9060225239555655,
+  "f1_macro_grandes": 0.9040872252808199,
+  "exactitud": 0.9972416296568507
+ },
+ "split": {
+  "entrenamiento": 1339146,
+  "validacion": 446382,
+  "test": 446278
+ }
+}

@@ -1,0 +1,153 @@
+{
+ "split": {
+  "train": 1259973,
+  "val": 419994,
+  "test": 420004
+ },
+ "detector": {
+  "validacion": {
+   "D0 binario": {
+    "f1_ataque": 0.9995648519013005,
+    "deteccion": 0.9998516114991196,
+    "precision": 0.9992782567428616,
+    "falsas_alarmas_por_10k": 2.289061422102926,
+    "exactitud": 0.9997904731972361
+   },
+   "D1 binario con pesos": {
+    "f1_ataque": 0.9995006106394656,
+    "deteccion": 0.9998713966325703,
+    "precision": 0.9991300995442908,
+    "falsas_alarmas_por_10k": 2.759416508836404,
+    "exactitud": 0.9997595203741005
+   },
+   "D2 familia->ataque": {
+    "f1_ataque": 0.9995747626582279,
+    "deteccion": 0.9999109668994718,
+    "precision": 0.9992387844277043,
+    "falsas_alarmas_por_10k": 2.4144894452318537,
+    "exactitud": 0.9997952351700262
+   },
+   "D3 familia->ataque con pesos": {
+    "f1_ataque": 0.9994956786583075,
+    "deteccion": 0.999891181766021,
+    "precision": 0.999100488306348,
+    "falsas_alarmas_por_10k": 2.8534875261831,
+    "exactitud": 0.9997571393877055
+   }
+  },
+  "elegido": "D2 familia->ataque",
+  "test": {
+   "f1_ataque": 0.9971084361252052,
+   "deteccion": 0.9943122242665242,
+   "precision": 0.9999204193898157,
+   "falsas_alarmas_por_10k": 0.2508544730488226,
+   "exactitud": 0.9986119179817335
+  },
+  "test_por_ataque": {
+   "Botnet": {
+    "flujos": 148,
+    "detectados": 1.0
+   },
+   "DDoS": {
+    "flujos": 19029,
+    "detectados": 0.9988964212517736
+   },
+   "DoS GoldenEye": {
+    "flujos": 1514,
+    "detectados": 1.0
+   },
+   "DoS Hulk": {
+    "flujos": 31694,
+    "detectados": 1.0
+   },
+   "DoS Slowhttptest": {
+    "flujos": 348,
+    "detectados": 0.5229885057471264
+   },
+   "DoS Slowloris": {
+    "flujos": 772,
+    "detectados": 0.6709844559585493
+   },
+   "FTP-Patator": {
+    "flujos": 795,
+    "detectados": 0.9874213836477987
+   },
+   "Heartbleed": {
+    "flujos": 3,
+    "detectados": 0.6666666666666666
+   },
+   "Infiltration": {
+    "flujos": 8,
+    "detectados": 0.875
+   },
+   "Infiltration - Portscan": {
+    "flujos": 14354,
+    "detectados": 1.0
+   },
+   "Portscan": {
+    "flujos": 31814,
+    "detectados": 0.9972339221726284
+   },
+   "SSH-Patator": {
+    "flujos": 593,
+    "detectados": 0.9443507588532883
+   },
+   "Web Attack - Brute Force": {
+    "flujos": 15,
+    "detectados": 1.0
+   },
+   "Web Attack - SQL Injection": {
+    "flujos": 3,
+    "detectados": 0.6666666666666666
+   },
+   "Web Attack - XSS": {
+    "flujos": 4,
+    "detectados": 1.0
+   }
+  }
+ },
+ "familia": {
+  "validacion": {
+   "F0 familia": 0.9809126817996084,
+   "F1 familia con pesos": 0.960801809409203
+  },
+  "elegido": "F0 familia",
+  "test": {
+   "f1_macro": 0.979473581006407,
+   "por_familia": {
+    "Benigno": {
+     "f1": 0.9990867608519597,
+     "soporte": 318910
+    },
+    "Botnet": {
+     "f1": 0.9833887043189369,
+     "soporte": 148
+    },
+    "DDoS": {
+     "f1": 0.9994479059862765,
+     "soporte": 19029
+    },
+    "DoS": {
+     "f1": 0.9938303266556268,
+     "soporte": 34328
+    },
+    "Escaneo": {
+     "f1": 0.9990243902439024,
+     "soporte": 46168
+    },
+    "Fuerza bruta": {
+     "f1": 0.9842663739480424,
+     "soporte": 1388
+    },
+    "Otros": {
+     "f1": 0.9,
+     "soporte": 11
+    },
+    "Web": {
+     "f1": 0.9767441860465116,
+     "soporte": 22
+    }
+   }
+  }
+ }
+}

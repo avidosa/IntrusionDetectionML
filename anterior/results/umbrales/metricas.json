@@ -1,0 +1,59 @@
+{
+ "validacion_sin": 0.9422271806035348,
+ "validacion_con": 0.9671239245680989,
+ "pesos": {
+  "Benign": 0.8608916593317348,
+  "Bot": 0.1426692909383278,
+  "DDoS": 0.05000000000000001,
+  "DoS GoldenEye": 1.0,
+  "DoS Hulk": 0.19250122715283505,
+  "DoS Slowhttptest": 0.47287080450158797,
+  "DoS slowloris": 3.3144540173399877,
+  "FTP-Patator": 0.05000000000000001,
+  "Heartbleed": 1.0,
+  "Infiltration": 1.0,
+  "PortScan": 2.4564560522315815,
+  "SSH-Patator": 14.822688982138953,
+  "Web Attack": 2.4564560522315815
+ },
+ "test": {
+  "sin_pesos": {
+   "f1_macro13": 0.9110544136520875,
+   "exactitud": 0.9976584102286019,
+   "por_clase": {
+    "Benign": 0.9992062047886158,
+    "Bot": 0.6564551422319475,
+    "DDoS": 0.9989833424571831,
+    "DoS GoldenEye": 0.9646059462010382,
+    "DoS Hulk": 0.9921034995192167,
+    "DoS Slowhttptest": 0.9079479119892232,
+    "DoS slowloris": 0.9396763119176067,
+    "FTP-Patator": 0.9966101694915255,
+    "Heartbleed": 1.0,
+    "Infiltration": 0.6666666666666666,
+    "PortScan": 0.8571428571428571,
+    "SSH-Patator": 0.9984423676012462,
+    "Web Attack": 0.8658669574700109
+   }
+  },
+  "con_pesos": {
+   "f1_macro13": 0.8929017655742698,
+   "exactitud": 0.9966411071126069,
+   "por_clase": {
+    "Benign": 0.9990666255349105,
+    "Bot": 0.6150121065375302,
+    "DDoS": 0.9985133601971754,
+    "DoS GoldenEye": 0.9641509433962264,
+    "DoS Hulk": 0.9857287434547295,
+    "DoS Slowhttptest": 0.9044183949504058,
+    "DoS slowloris": 0.9409468033186921,
+    "FTP-Patator": 0.9948892674616695,
+    "Heartbleed": 1.0,
+    "Infiltration": 0.7142857142857143,
+    "PortScan": 0.6243822075782537,
+    "SSH-Patator": 0.9984447900466563,
+    "Web Attack": 0.8678839957035446
+   }
+  }
+ }
+}
