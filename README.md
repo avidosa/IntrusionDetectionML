@@ -8,14 +8,21 @@ Noviembre de 2026.
 
 ## Resultado
 
-**Detección (ataque o tráfico normal)**, sobre 420.004 flujos de prueba que el modelo no ha visto:
+**Detección (ataque o tráfico normal)**, sobre 420.004 flujos de prueba que el modelo no ha visto
+(101.094 de ataque y 318.910 normales), con «ataque» como clase positiva:
 
-| | |
-|---|---:|
-| Ataques detectados | **99,43 %** |
-| Falsas alarmas | **0,25 por cada 10.000 flujos benignos** (8 de 318.910) |
-| Precisión de las alarmas | 0,9999 |
-| F1 | 0,997 |
+| | Predicho: ataque | Predicho: normal |
+|---|---:|---:|
+| **Real: ataque** | VP **100.519** | FN **575** |
+| **Real: normal** | FP **8** | VN **318.902** |
+
+| Métrica | Cálculo | Valor |
+|---|---|---:|
+| Tasa de detección (recall, TPR) | VP / (VP + FN) | **99,43 %** |
+| Tasa de falsos negativos (FNR) | FN / (VP + FN) | 0,57 % |
+| Tasa de falsos positivos (FPR) | FP / (FP + VN) | **0,0025 %** |
+| Precisión | VP / (VP + FP) | 99,99 % |
+| F1 | 2·VP / (2·VP + FP + FN) | 0,997 |
 
 **Familia del ataque**, con F1 macro de **0,98**:
 
@@ -37,14 +44,18 @@ revés.
 
 ### Dónde falla
 
-| Ataque | Detectado | |
-|---|---:|---|
-| DoS Hulk, GoldenEye, Botnet, escaneos, web | 99,7–100 % | |
-| DDoS | 99,89 % | |
-| FTP-Patator | 98,74 % | |
-| SSH-Patator | 94,44 % | |
-| **DoS Slowloris** | **67,1 %** | |
-| **DoS Slowhttptest** | **52,3 %** | |
+De los 575 falsos negativos, 420 son de dos ataques:
+
+| Ataque | Flujos de prueba | Falsos negativos | Detectado |
+|---|---:|---:|---:|
+| **DoS Slowloris** | 772 | **254** | 67,1 % |
+| **DoS Slowhttptest** | 348 | **166** | 52,3 % |
+| Portscan | 31.814 | 88 | 99,7 % |
+| SSH-Patator | 593 | 33 | 94,4 % |
+| DDoS | 19.029 | 21 | 99,9 % |
+| FTP-Patator | 795 | 10 | 98,7 % |
+| Heartbleed, infiltración, inyección SQL | 14 | 3 | — |
+| DoS Hulk, GoldenEye, botnet, escaneo interno, web (fuerza bruta y XSS) | 47.729 | 0 | 100 % |
 
 Los dos DoS «lentos» son el punto débil, y tiene sentido: su gracia es abrir conexiones y mandar datos
 con cuentagotas para que parezcan clientes lentos legítimos. Visto flujo a flujo, muchos son
