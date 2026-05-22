@@ -4,7 +4,7 @@ Un detector de intrusiones de red con **XGBoost**, entrenado sobre la versión *
 CIC-IDS2017 y evaluado como se usaría de verdad: separando entrenamiento y prueba por tiempo, sin
 columnas que delaten la respuesta y mirando la nota de prueba una sola vez.
 
-Noviembre de 2026.
+Mayo de 2026.
 
 ## Resultado
 
